@@ -1,6 +1,9 @@
 # Changelog
 # Changelog
 
+## 0.1.2
+- Corrección de metadatos en `pubspec.yaml`: URLs de `homepage`, `repository` e `issue_tracker` apuntando a `paywall-flutter`.
+
 ## 0.1.1
 - Documentación mejorada en español (README, dartdoc en API pública).
 - Regla `public_member_api_docs` habilitada.
