@@ -1,0 +1,22 @@
+name: paywall_flutter
+description: Overlay de Flutter para recordar pagos vencidos con efectos (gradiente, sólido, fade). Widget en Dart puro con control en tiempo de ejecución.
+version: 0.1.1
+homepage: https://github.com/GbrielGarcia/paywall-js
+repository: https://github.com/GbrielGarcia/paywall-js
+issue_tracker: https://github.com/GbrielGarcia/paywall-js/issues
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
