@@ -8,7 +8,7 @@ Agrega al `pubspec.yaml` de tu app:
 
 ```yaml
 dependencies:
-  paywall_flutter: ^0.1.2
+  paywall_flutter: ^0.1.3
 ```
 
 ## Uso básico
