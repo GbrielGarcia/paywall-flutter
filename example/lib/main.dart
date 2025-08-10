@@ -52,7 +52,7 @@ class _DemoPageState extends State<DemoPage> {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Paywall Overlay Demo')),
-      body: PaywallOverlay(
+      body: PaywallFlutter(
         controller: _controller,
         dueDate: dueDate,
         daysDeadline: 10,

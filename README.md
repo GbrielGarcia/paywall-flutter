@@ -16,7 +16,7 @@ dependencies:
 ```dart
 import 'package:paywall_flutter/paywall_overlay.dart';
 
-PaywallOverlay(
+PaywallFlutter(
   child: MyHomePage(),
   dueDate: DateTime(2025, 7, 15),
   daysDeadline: 10,
@@ -45,7 +45,7 @@ PaywallOverlay(
 ```dart
 final controller = PaywallController();
 
-PaywallOverlay(
+PaywallFlutter(
   controller: controller,
   child: MyHomePage(),
   dueDate: DateTime(2025, 7, 15),

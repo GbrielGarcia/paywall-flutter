@@ -118,7 +118,7 @@ class _ReadonlyDemoPageState extends State<ReadonlyDemoPage> {
           const Divider(height: 1),
           // Contenido bajo overlay
           Expanded(
-            child: PaywallOverlay(
+            child: PaywallFlutter(
               controller: _controller,
               dueDate: dueDate,
               daysDeadline: 10,

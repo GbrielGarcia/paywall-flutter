@@ -1,6 +1,6 @@
 /// Biblioteca principal del paquete paywall_flutter.
 ///
-/// Proporciona el widget [PaywallOverlay], el controlador [PaywallController]
+/// Proporciona el widget [PaywallFlutter], el controlador [PaywallController]
 /// y utilidades como [computeOpacity] para aplicar un recordatorio visual de
 /// pago vencido sobre una interfaz Flutter.
 library paywall_overlay;
@@ -74,7 +74,7 @@ double computeOpacity({
 }
 
 /// Widget que superpone un efecto visual para recordar pagos vencidos.
-class PaywallOverlay extends StatefulWidget {
+class PaywallFlutter extends StatefulWidget {
   final Widget child;
 
   /// Fecha de vencimiento del pago.
@@ -113,7 +113,7 @@ class PaywallOverlay extends StatefulWidget {
   /// Recalcula automáticamente al cruzar medianoche.
   final bool recalculateOnMidnight;
 
-  const PaywallOverlay({
+  const PaywallFlutter({
     super.key,
     required this.child,
     required this.dueDate,
@@ -131,10 +131,10 @@ class PaywallOverlay extends StatefulWidget {
   });
 
   @override
-  State<PaywallOverlay> createState() => _PaywallOverlayState();
+  State<PaywallFlutter> createState() => _PaywallFlutterState();
 }
 
-class _PaywallOverlayState extends State<PaywallOverlay> {
+class _PaywallFlutterState extends State<PaywallFlutter> {
   late bool _enabled;
   Timer? _midnightTimer;
 
@@ -147,7 +147,7 @@ class _PaywallOverlayState extends State<PaywallOverlay> {
   }
 
   @override
-  void didUpdateWidget(covariant PaywallOverlay oldWidget) {
+  void didUpdateWidget(covariant PaywallFlutter oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.controller != widget.controller) {
       oldWidget.controller?.removeListener(_onControllerChange);

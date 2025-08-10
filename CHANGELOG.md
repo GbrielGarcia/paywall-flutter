@@ -3,6 +3,7 @@
 
 ## 0.1.2
 - Corrección de metadatos en `pubspec.yaml`: URLs de `homepage`, `repository` e `issue_tracker` apuntando a `paywall-flutter`.
+- **BREAKING CHANGE**: Renombrado `PaywallOverlay` → `PaywallFlutter` para mejor consistencia con el nombre del paquete.
 
 ## 0.1.1
 - Documentación mejorada en español (README, dartdoc en API pública).
